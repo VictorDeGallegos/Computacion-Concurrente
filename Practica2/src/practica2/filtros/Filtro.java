@@ -76,7 +76,7 @@ public class Filtro {
                 // Filtro: Escala de gris (single color)
                 f = (c) -> {
                     // Aqui va el codigo
-                   return new Color(c.getRed(),c.getRed(),c.getRed());
+                    return new Color(c.getRed(), c.getRed(), c.getRed());
                 };
                 if (sec) {
                     this.doPorPixel(f);
@@ -103,13 +103,15 @@ public class Filtro {
                 int gVal = entrada.nextInt();
                 int bVal = entrada.nextInt();
                 f = c -> {
-                        int r = validarRango(c.getRed() & rVal);
-                        int g = validarRango(c.getGreen() & gVal);
-                        int b = validarRango(c.getBlue() & bVal);
-                        return new Color(r, g, b);
-                    };
-                if (sec) this.doPorPixel(f);
-                else this.doConcurrente(null, f, "0");
+                    int r = validarRango(c.getRed() & rVal);
+                    int g = validarRango(c.getGreen() & gVal);
+                    int b = validarRango(c.getBlue() & bVal);
+                    return new Color(r, g, b);
+                };
+                if (sec)
+                    this.doPorPixel(f);
+                else
+                    this.doConcurrente(null, f, "0");
                 break;
             case 7:
             case 8:
@@ -143,61 +145,58 @@ public class Filtro {
         }
     }
 
-    private void doConcurrente(Object object, UnaryOperator<Color> f, String string) {
-    }
-
-    public void doConcurrente(double[][] matrix, UnaryOperator<Color> f,String op) {
+    public void doConcurrente(double[][] matrix, UnaryOperator<Color> f, String op) {
         try {
             FiltroConcurrente mc = new FiltroConcurrente(this.rgb, matrix, f);
             List<Thread> hilosh = new ArrayList<>();
-            int hilos = num_hilos;        
+            int hilos = num_hilos;
 
-            for(int i = 0; i < alto; i++){
-                Thread t = new Thread(mc,op+"-"+i);
+            for (int i = 0; i < alto; i++) {
+                Thread t = new Thread(mc, op + "-" + i);
                 hilosh.add(t);
                 t.start();
-                if(hilosh.size() == hilos){
-                    for(Thread threads: hilosh){
+                if (hilosh.size() == hilos) {
+                    for (Thread threads : hilosh) {
                         threads.join();
                     }
                     hilosh.clear();
                 }
             }
 
-            for(Thread threads: hilosh){
+            for (Thread threads : hilosh) {
                 threads.join();
             }
-        } catch(InterruptedException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
             Thread.currentThread().interrupt();
-        }                         
+        }
     }
 
-    public float getFactor(double[][] matrix){
+    public float getFactor(double[][] matrix) {
         float suma = 0;
-        for (int alfa = 0; alfa < matrix.length; alfa ++)
-            for (int beta = 0; beta < matrix.length; beta ++) {
+        for (int alfa = 0; alfa < matrix.length; alfa++)
+            for (int beta = 0; beta < matrix.length; beta++) {
                 suma += matrix[alfa][beta];
             }
-        suma = suma == 0? 1: 1 / suma;
+        suma = suma == 0 ? 1 : 1 / suma;
         return suma;
     }
 
     private int[] applyMatrix(double[][] matrix, int alfa, int beta) {
-        int[] valor = {0, 0, 0}; // [0] - r, [1] - g, [2] - b
+        int[] valor = { 0, 0, 0 }; // [0] - r, [1] - g, [2] - b
         int length = matrix.length;
-        for (int i = 0; i < length; i ++)
+        for (int i = 0; i < length; i++)
             for (var j = 0; j < length; j++) {
-            //alto y ancho (ubicación del pixel)
-            int x = alfa + i - (length/2);
-            int y = beta + j - (length/2);
-            int site = Math.floorMod(this.ancho * x + y,this.rgb.length);
-            valor[0] += this.rgb[site].getRed() * matrix[i][j];
-            valor[1] += this.rgb[site].getGreen() * matrix[i][j];
-            valor[2] += this.rgb[site].getBlue() * matrix[i][j];
+                // alto y ancho (ubicación del pixel)
+                int x = alfa + i - (length / 2);
+                int y = beta + j - (length / 2);
+                int site = Math.floorMod(this.ancho * x + y, this.rgb.length);
+                valor[0] += this.rgb[site].getRed() * matrix[i][j];
+                valor[1] += this.rgb[site].getGreen() * matrix[i][j];
+                valor[2] += this.rgb[site].getBlue() * matrix[i][j];
             }
         return valor;
-    } 
+    }
 
     class FiltroConcurrente implements Runnable {
 
@@ -205,20 +204,20 @@ public class Filtro {
         private double[][] matrix;
         private UnaryOperator<Color> f;
 
-        public FiltroConcurrente(Color[] salida, double[][] matrix, UnaryOperator<Color> f){
+        public FiltroConcurrente(Color[] salida, double[][] matrix, UnaryOperator<Color> f) {
             this.salida = salida;
             this.matrix = matrix;
             this.f = f;
         }
 
-        public void convolucionConcurrente (int posicion){
+        public void convolucionConcurrente(int posicion) {
             float factor = getFactor(this.matrix);
-            for (int i = 0 ; i < ancho; i++) {
-                //Calculamos alto y ancho (ubicación del pixel)
+            for (int i = 0; i < ancho; i++) {
+                // Calculamos alto y ancho (ubicación del pixel)
                 int h = (posicion * ancho + i) / alto;
                 int w = (posicion * ancho + i) % alto;
-                int[] valor =  applyMatrix(this.matrix, w, h); //aplicamos la matriz
-                //Asignamos los nuevos valores
+                int[] valor = applyMatrix(this.matrix, w, h); // aplicamos la matriz
+                // Asignamos los nuevos valores
                 int r = validarRango(factor * valor[0]);
                 int g = validarRango(factor * valor[1]);
                 int b = validarRango(factor * valor[2]);
@@ -226,7 +225,7 @@ public class Filtro {
             }
         }
 
-        public void doPorPixelConcurrente(int posicion){
+        public void doPorPixelConcurrente(int posicion) {
             for (int i = 0; i < ancho; i++) {
                 this.salida[posicion * ancho + i] = f.apply(rgb[posicion * ancho + i]);
             }
