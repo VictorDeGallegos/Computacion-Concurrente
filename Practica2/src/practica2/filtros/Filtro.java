@@ -199,7 +199,7 @@ public class Filtro {
         return valor;
     }
 
-    public void doConvolucion(Double[][] matrix) {
+    public void doConvolucion(double[][] matrix) {
         float factor = this.getFactor(matrix);
         for (int i = 0; i < this.rgb.length; i++) {
             // se calcula el alto y el ancho
@@ -219,7 +219,7 @@ public class Filtro {
      * @param sec - indica si se va aplicar de manera secuencial o concurrente
      */
 
-    public void selectConvolucion(int op, boolean sec) {
+    public void selecConvolucion(int op, boolean sec) {
         double[][][] matriz = {
                 // Blur 1, op 7 aqui va el codigo de blur
                 { {},
