@@ -34,7 +34,7 @@ public class Matriz {
         valores = new int[t][t];
         try {
             
-          File myObj = new File("src/practica1/matrices/ejemplos/mat"+tam);          
+          File myObj = new File("src/practica2/matrices/matrixexamples/mat"+tam);          
           Scanner myReader = new Scanner(myObj);
           while (myReader.hasNextLine()) {
             String data = myReader.nextLine();            
