@@ -73,7 +73,7 @@ public class Filtro {
                 // Filtro: Escala de gris (single color)
                 f = (c) -> {
                     // Aqui va el codigo
-                    return c; // eliminar esta linea cuando implemente el filtro
+                   return new Color(c.getRed(),c.getRed(),c.getRed());
                 };
                 if (sec) {
                     this.doPorPixel(f);
