@@ -118,7 +118,8 @@ public class Filtro {
             case 9:
             case 10:
                 // Filtro: Matriz de Convolución (Blur o Sharpen)
-                // Aqui va codigo
+                System.out.println("Filtro: Matriz de Convolución (Blur o Sharpen)");
+                this.selecConvolucion(op - 7, sec);
                 break;
             default:
                 throw new IllegalArgumentException("Opción no valida");
@@ -196,6 +197,62 @@ public class Filtro {
                 valor[2] += this.rgb[site].getBlue() * matrix[i][j];
             }
         return valor;
+    }
+
+    public void doConvolucion(Double[][] matrix) {
+        float factor = this.getFactor(matrix);
+        for (int i = 0; i < this.rgb.length; i++) {
+            // se calcula el alto y el ancho
+            int h = i / this.alto;
+            int w = i % this.ancho;
+            int[] valor = this.applyMatrix(matrix, w, h);// se le aplica a la matriz
+            int r = this.validarRango(factor * valor[0]);
+            int g = this.validarRango(factor * valor[1]);
+            int b = this.validarRango(factor * valor[2]);
+            this.rgb[w * this.ancho + h] = new Color(r, g, b);
+        }
+    }
+
+    /**
+     * @desc Selecciona y aplica una matriz de convolución
+     * @param op  - nos indica que matriz queremos aplicar
+     * @param sec - indica si se va aplicar de manera secuencial o concurrente
+     */
+
+    public void selectConvolucion(int op, boolean sec) {
+        double[][][] matriz = {
+                // Blur 1, op 7 aqui va el codigo de blur
+                { {},
+                        {},
+                        {} },
+
+                // Blur 2, op 8 aqui va el codigo de blur
+                { {},
+                        {},
+                        {},
+                        {},
+                        {}, },
+                // Blur 3, op 9 aqui va el codigo de blur
+                { {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {},
+                        {} },
+                // Sharpen , op 10
+                { { -1, -1, -1 },
+                        { -1, 9, -1 },
+                        { -1, 1, -1 } }
+        };
+        if (sec)
+            this.doConvolucion(matriz[op]);
+        else
+            this.doConcurrente(matriz[op], null, "1");
+
     }
 
     class FiltroConcurrente implements Runnable {
