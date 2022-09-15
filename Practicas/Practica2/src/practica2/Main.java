@@ -174,9 +174,9 @@ public class Main {
                 System.out.println("Archivo seleccionado: " + fileToOpen.getAbsolutePath());
             }
 
-            // Copiar imagen en directorio especificado
+            // Copiar imagen en directorio imagenes
             Path srcFile = Paths.get(fileChooser.getSelectedFile().getAbsolutePath());
-            Path destDir = Paths.get("imagenes");
+            Path destDir = Paths.get("Practicas/Practica2/imagenes");
             try {
                 Files.copy(srcFile, destDir.resolve(srcFile.getFileName()));
             } catch (IOException e1) {
