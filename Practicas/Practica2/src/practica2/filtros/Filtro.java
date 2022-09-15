@@ -87,10 +87,10 @@ public class Filtro {
             case 5:
                 // Filtro: Alto contraste
                 f = (c) -> {
-                    int r = validarRango(c.getRed()*.03);
-                    int g = validarRango(c.getGreen()*.59);
-                    int b = validarRango(c.getBlue()*0.11);
-                    int val = (r + g + b) > 127? 255: 0;
+                    int r = validarRango(c.getRed() * .03);
+                    int g = validarRango(c.getGreen() * .59);
+                    int b = validarRango(c.getBlue() * 0.11);
+                    int val = (r + g + b) > 127 ? 255 : 0;
                     return new Color(val, val, val);
                 };
                 if (sec) {
@@ -225,29 +225,29 @@ public class Filtro {
     public void selecConvolucion(int op, boolean sec) {
         double[][][] matriz = {
                 // Blur 1, op 7 aqui va el codigo de blur
-                {{0.0, 0.2, 0.0}, 
-                 {0.2, 0.2, 0.2}, 
-                 {0.0, 0.2, 0.0}}, 
-                 //Blur 2, op 8
-                 {{0, 0, 1, 0, 0},
-                 {0, 1, 1, 1, 0},
-                 {1, 1, 1, 1, 1},
-                 {0, 1, 1, 1, 0},
-                 {0, 0, 1, 0, 0}},
+                { { 0.0, 0.2, 0.0 },
+                        { 0.2, 0.2, 0.2 },
+                        { 0.0, 0.2, 0.0 } },
+                // Blur 2, op 8
+                { { 0, 0, 1, 0, 0 },
+                        { 0, 1, 1, 1, 0 },
+                        { 1, 1, 1, 1, 1 },
+                        { 0, 1, 1, 1, 0 },
+                        { 0, 0, 1, 0, 0 } },
                 // Blur 3, op 9 aqui va el codigo de blur
-                {{1, 0, 0, 0, 0, 0, 0, 0, 0},
-                {0, 1, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 1, 0, 0, 0, 0, 0, 0},
-                {0, 0, 0, 1, 0, 0, 0, 0, 0},
-                {0, 0, 0, 0, 1, 0, 0, 0, 0},
-                {0, 0, 0, 0, 0, 1, 0, 0, 0},
-                {0, 0, 0, 0, 0, 0, 1, 0, 0},
-                {0, 0, 0, 0, 0, 0, 0, 1, 0},
-                {0, 0, 0, 0, 0, 0, 0, 0, 1}},
+                { { 1, 0, 0, 0, 0, 0, 0, 0, 0 },
+                        { 0, 1, 0, 0, 0, 0, 0, 0, 0 },
+                        { 0, 0, 1, 0, 0, 0, 0, 0, 0 },
+                        { 0, 0, 0, 1, 0, 0, 0, 0, 0 },
+                        { 0, 0, 0, 0, 1, 0, 0, 0, 0 },
+                        { 0, 0, 0, 0, 0, 1, 0, 0, 0 },
+                        { 0, 0, 0, 0, 0, 0, 1, 0, 0 },
+                        { 0, 0, 0, 0, 0, 0, 0, 1, 0 },
+                        { 0, 0, 0, 0, 0, 0, 0, 0, 1 } },
                 // Sharpen , op 10
-                {{ -1, -1, -1 },
-                 { -1, 9, -1 },
-                 { -1, 1, -1 } }
+                { { -1, -1, -1 },
+                        { -1, 9, -1 },
+                        { -1, 1, -1 } }
         };
         if (sec)
             this.doConvolucion(matriz[op]);
