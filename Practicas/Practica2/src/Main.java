@@ -1,4 +1,3 @@
-package practica2;
 
 import javax.imageio.ImageIO;
 // Por lo general, necesitarás paquetes Swing y Awt
