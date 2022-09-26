@@ -184,7 +184,7 @@ public class Main {
     // menuOptionAF.setMnemonic(KeyEvent.VK_P);
     // mb.add(menuOptionAF);
 
-    // // Área de texto en el centro deshabilitada
+    // // Area de texto en el centro deshabilitada
     // JTextArea ta = new JTextArea();
     // ta.setEnabled(false);
 
