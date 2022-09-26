@@ -28,7 +28,7 @@ echo.
 
     ::RUTA DE COMPILACION
     ::Cambiar por la ruta donde se encuentre: Computacion-Concurrente\practicas\Practica2
-    cd C:\Users\Carlos\Documents\GitHub\Computacion-Concurrente\practicas\Practica2
+    cd C:\Users\josed\OneDrive\Documentos\concurrente\practicas\Computacion-Concurrente\Practicas\Practica2
     ::COMANDO DE COMPILACION
     javac -d ./classes src/Main.java src/practica2/filtros/*.java src/practica2/matrices/*.java
 
