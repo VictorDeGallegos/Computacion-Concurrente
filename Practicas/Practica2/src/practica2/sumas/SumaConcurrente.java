@@ -55,6 +55,18 @@ public class SumaConcurrente implements Runnable {
         for (int i = 0; i < num_hilos; i++) {
             suma_total += sumas[i];
         }
+
+        // Numero de hilos
+        System.out.println("Numero de hilos: " + num_hilos);
+
+        // Impreme suma de cada hilo
+        for (int i = 0; i < num_hilos; i++) {
+            System.out.println("Suma hilo " + i + ": " + sumas[i]);
+        }
+        // Imprime suma total
         System.out.println("Suma total: " + suma_total);
+        // Imprimir tiempo de ejecución
+        long tiempo = System.currentTimeMillis();
+        System.out.println("Tiempo de ejecución: " + tiempo + " ms");
     }
 }
