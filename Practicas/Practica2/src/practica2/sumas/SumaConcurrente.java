@@ -25,6 +25,7 @@ public class SumaConcurrente implements Runnable {
 
     // Suma de los primeros n numeros de manera concurrente
     public static void main(String[] args) {
+        long inicio_tiempo = System.nanoTime();
         int n = 10; // 10 primeros numeros
         int num_hilos = 4; // 4 hilos
         int suma_total = 0;
@@ -65,8 +66,10 @@ public class SumaConcurrente implements Runnable {
         }
         // Imprime suma total
         System.out.println("Suma total: " + suma_total);
-        // Imprimir tiempo de ejecución
-        long tiempo = System.currentTimeMillis();
-        System.out.println("Tiempo de ejecución: " + tiempo + " ms");
+
+        long fin_tiempo = System.nanoTime();
+        double tiempo = (double) ((fin_tiempo - inicio_tiempo) / 1e6);
+        System.out.println(tiempo + " Milisegundos");
+
     }
 }
