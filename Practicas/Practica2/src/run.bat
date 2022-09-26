@@ -27,8 +27,8 @@ echo Compilando Practica dos
 echo.
 
     ::RUTA DE COMPILACION
-    ::Cambiar por la ruta donde se encuentre: Computacion-Concurrente\Practicas\Practica2
-    cd C:\Users\Carlos\Documents\GitHub\Computacion-Concurrente\Practicas\Practica2
+    ::Cambiar por la ruta donde se encuentre: Computacion-Concurrente\practicas\Practica2
+    cd C:\Users\Carlos\Documents\GitHub\Computacion-Concurrente\practicas\Practica2
     ::COMANDO DE COMPILACION
     javac -d ./classes src/Main.java src/practica2/filtros/*.java src/practica2/matrices/*.java
 
@@ -39,6 +39,9 @@ pause
 echo.
     ::DEMOSTRACION DE FILTROS SECUENCIALES
     echo A continuacion te mostraremos los filtros secuenciales
-    java Main.java
-pause
+    ::cd C:\Users\Carlos\Documents\GitHub\Computacion-Concurrente\practicas\Practica2
+    java -cp ./classes Main 10 imagenes/javatar.png 3 false 5
+
+
+ pause
 pause exit
