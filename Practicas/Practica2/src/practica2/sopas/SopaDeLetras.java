@@ -7,9 +7,13 @@ package practica2.sopas;
  */
 public class SopaDeLetras {
     public static void main(String[] args) {
-        SopaDeLetrasSecuencial sopaDeLetras = new SopaDeLetrasSecuencial("Practicas/Practica2/src/practica2/sopas/sopa1","Practicas/Practica2/src/practica2/sopas//palabras1");        
+        long inicio = System.nanoTime();
+        SopaDeLetrasConcurrente sopaDeLetras = new SopaDeLetrasConcurrente("Practicas/Practica2/src/practica2/sopas/sopa1","Practicas/Practica2/src/practica2/sopas//palabras1");
         sopaDeLetras.muestraSopa();
         sopaDeLetras.encuentraPalabras();
         sopaDeLetras.muestraLetras();
+        long fin = System.nanoTime();
+        double tiempo = (double) ((fin - inicio)/1000);
+        System.out.println(tiempo +" nanosegundos");
     }
 }
