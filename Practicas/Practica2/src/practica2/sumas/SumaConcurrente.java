@@ -27,12 +27,12 @@ public class SumaConcurrente implements Runnable {
 
     // Suma de los primeros n numeros de manera concurrente
     public static void main(String[] args) {
-        long inicio_tiempo = System.nanoTime();
         int n = 10; // 10 primeros numeros
         // numero de hilos por Scanner
-        // Scanner sc = new Scanner(System.in);
-        // System.out.println("Introduce el numero de hilos: ");
-        int num_hilos = 5;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el numero de hilos: ");
+        int num_hilos = sc.nextInt();
+        long inicio_tiempo = System.nanoTime();
         int suma_total = 0;
         int inicio = 0;
         int fin = 0;
