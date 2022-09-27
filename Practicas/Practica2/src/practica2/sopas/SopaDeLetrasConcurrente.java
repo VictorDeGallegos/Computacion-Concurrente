@@ -290,23 +290,25 @@ public class SopaDeLetrasConcurrente {
 
         @Override
         public void run() {
+            synchronized (sopa){
               for (int i = 0; i < sopa.length; i++) {
             for (int j = 0; j < sopa[i].length; j++) {
+
                 for (Palabra palabra : palabras) {
-                    palabra.verifica(sopa[i][j], i, j, true);
+                  palabra.verifica(sopa[i][j], i, j, true);
                 }
             }
         }
         }
     }
-    /**
-     * Hilo que revisa si las palabras se encuentran en la sopa de letras de manera vertical.
-     */
+    }
+ 
 
         class hilovertical extends Thread {
 
             @Override
             public void run() {
+                synchronized (sopa){
                 for (int i = 0; i < sopa[1].length; i++) {
                     for (int j = 0; j < sopa.length; j++) {
                         for (Palabra palabra : palabras) {
@@ -314,6 +316,7 @@ public class SopaDeLetrasConcurrente {
                         }
                     }
                 }
+            }
             }
         }
 
@@ -329,7 +332,9 @@ public class SopaDeLetrasConcurrente {
         h2.start();
         try {
             h1.join();
+            System.out.println(h1.getName());
             h2.join();
+            System.out.println(h2.getName());
         }catch (InterruptedException exc){
             System.out.println("Hilo principal interrumpido.");
         }
