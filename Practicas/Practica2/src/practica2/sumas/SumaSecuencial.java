@@ -6,7 +6,7 @@ public class SumaSecuencial {
     public static void main(String[] args) {
         long inicio_tiempo = System.nanoTime();
         int n = 10; // 10 primeros numeros
-        int hilos = 1; // 5 hilos
+        int hilos = 1; // 1 hilos
         // suma secuencial
         int suma_total = 0;
         int inicio = 0;
