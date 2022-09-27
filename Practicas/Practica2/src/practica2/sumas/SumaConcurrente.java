@@ -1,5 +1,7 @@
 package practica2.sumas;
 
+import java.util.Scanner;
+
 public class SumaConcurrente implements Runnable {
 
     private int inicio;
@@ -27,7 +29,10 @@ public class SumaConcurrente implements Runnable {
     public static void main(String[] args) {
         long inicio_tiempo = System.nanoTime();
         int n = 10; // 10 primeros numeros
-        int num_hilos = 4; // 4 hilos
+        // numero de hilos por Scanner
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Introduce el numero de hilos: ");
+        int num_hilos = 5;
         int suma_total = 0;
         int inicio = 0;
         int fin = 0;
