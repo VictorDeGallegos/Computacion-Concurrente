@@ -8,12 +8,12 @@ package practica2.sopas;
 public class SopaDeLetras {
     public static void main(String[] args) {
         long inicio = System.nanoTime();
-        SopaDeLetrasConcurrente sopaDeLetras = new SopaDeLetrasConcurrente("Practicas/Practica2/src/practica2/sopas/sopa1","Practicas/Practica2/src/practica2/sopas//palabras1");
+        SopaDeLetrasSecuencial sopaDeLetras = new SopaDeLetrasSecuencial("/mnt/d/Concurrente/Practicas/Computacion-Concurrente/Practicas/Practica2/src/practica2/sopas/sopa3","/mnt/d/Concurrente/Practicas/Computacion-Concurrente/Practicas/Practica2/src/practica2/sopas/palabras3");
         sopaDeLetras.muestraSopa();
         sopaDeLetras.encuentraPalabras();
         sopaDeLetras.muestraLetras();
         long fin = System.nanoTime();
-        double tiempo = (double) ((fin - inicio)/1000);
-        System.out.println(tiempo +" nanosegundos");
+        double tiempo = (double) ((fin - inicio)/1e6);
+        System.out.println(tiempo +" milisegundos");
     }
 }
