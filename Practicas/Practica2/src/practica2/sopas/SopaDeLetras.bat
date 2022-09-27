@@ -28,26 +28,24 @@ echo.
 
     ::RUTA DE COMPILACION
     ::Cambiar por la ruta donde se encuentre: Computacion-Concurrente\practicas\Practica2
-    cd C:\Users\Carlos\Documents\GitHub\Computacion-Concurrente\practicas\Practica2\src\practica2\sumas
+    cd C:\Users\josed\OneDrive\Documentos\concurrente\practicas\Computacion-Concurrente\Practicas\Practica2\src\practica2\sopas
     ::COMANDO DE COMPILACION
-    javac SopaDeLetras.java
-    javac SopaDeLetrasC.java
-    javac SopaDeLetrasConcurrente.java
-    javac SopaDeLetrasSecuencial.java
+    javac SopaDeLetras.java  SopaDeLetrasC.java  SopaDeLetrasConcurrente.java SopaDeLetrasSecuencial.java
 
 echo Termino compilacion
 echo.
 echo EMPIEZA LA EJECUCION DE LAS SOPAS DE LETRAS DE LA PRACTICA 2
+ :inicio
     SET var=0
     echo.
     echo ------------------------------------------------------------------------------
     echo Este es un menu interectivo ingresa el numero de la opcion que te interese. 
    
-    echo  1     Sopa de letras Secuencial       1
-    echo  2     Sopa de letras Concurrente      2
+    echo  1     Sopa de letras secuencial       1
+    echo  2     Sopa de letras concurrente      2
     echo  3     Salir 
 
-    SET /p var= ^> Seleccione una opcion [1-10]:
+    SET /p var= ^> Seleccione una opcion [1-3]:
 
     if "%var%"=="0" goto inicio
     if "%var%"=="1" goto op1
@@ -62,7 +60,7 @@ echo EMPIEZA LA EJECUCION DE LAS SOPAS DE LETRAS DE LA PRACTICA 2
 
     :op1
         echo.
-        echo. Has elegido la opcion uno entonces se ejecutara la sopa de letras secuencial
+        echo. Has elegido la opcion uno entonces se ejecutara la sopa secuencial
         echo.
             java SopaDeLetras.java
         color 08
@@ -72,7 +70,7 @@ echo EMPIEZA LA EJECUCION DE LAS SOPAS DE LETRAS DE LA PRACTICA 2
 
     :op2
         echo.
-        echo. Has elegido la opcion dos la cual te mostrara la sopa de letras Concurrente
+        echo. Has elegido la opcion dos la cual te mostrara la sopa concurrente
         echo.
             java SopaDeLetrasC.java
         color 09
@@ -84,4 +82,5 @@ echo EMPIEZA LA EJECUCION DE LAS SOPAS DE LETRAS DE LA PRACTICA 2
         @cls&exit
 pause
 echo.
+
 pause exit

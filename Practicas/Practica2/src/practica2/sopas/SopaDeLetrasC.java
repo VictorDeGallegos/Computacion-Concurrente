@@ -11,7 +11,7 @@ package practica2.sopas;
 public class SopaDeLetrasC {
     public static void main(String[] args) {
         long inicio = System.nanoTime();
-        SopaDeLetrasConcurrente sopaDeLetrasC = new SopaDeLetrasConcurrente("/mnt/d/Concurrente/Practicas/Computacion-Concurrente/Practicas/Practica2/src/practica2/sopas/sopa3", "/mnt/d/Concurrente/Practicas/Computacion-Concurrente/Practicas/Practica2/src/practica2/sopas/palabras3");
+        SopaDeLetrasConcurrente sopaDeLetrasC = new SopaDeLetrasConcurrente("turuta/sopa3", "turuta/palabras3");
         sopaDeLetrasC.muestraSopa();
         sopaDeLetrasC.encuentraPalabras();
         sopaDeLetrasC.muestraLetras();
