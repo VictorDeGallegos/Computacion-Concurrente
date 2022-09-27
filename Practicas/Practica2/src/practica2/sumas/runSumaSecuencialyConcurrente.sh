@@ -30,12 +30,14 @@ echo
 #Cambiar por la ruta donde se encuentre: Computacion-Concurrente/practicas/Practica2/src/practica2/sumas
 cd /Users/victor/Documents/GitHub/Computacion-Concurrente/practicas/Practica2/src/practica2/sumas
 javac /Users/victor/Documents/GitHub/Computacion-Concurrente/practicas/Practica2/src/practica2/sumas/SumaSecuencial.java
+javac /Users/victor/Documents/GitHub/Computacion-Concurrente/practicas/Practica2/src/practica2/sumas/SumaConcurrente.java
 
 echo Termino compilacion
 echo
 echo EMPIEZA LA EJECUCION DE PRACTICA 2
 echo
 java SumaSecuencial.java
+java SumaConcurrente.java
 echo
 echo Termino la ejecucion
 echo
