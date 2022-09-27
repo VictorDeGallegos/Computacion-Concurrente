@@ -1,5 +1,7 @@
 package practica2.sumas;
 
+import java.util.Scanner;
+
 public class SumaConcurrente implements Runnable {
 
     private int inicio;
@@ -23,10 +25,29 @@ public class SumaConcurrente implements Runnable {
         sumas[id] = suma;
     }
 
+    public static boolean isNumber(String n) {
+        try {
+            Integer.parseInt(n);
+            return true;
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+    }
+
     // Suma de los primeros n numeros de manera concurrente
     public static void main(String[] args) {
         int n = 10; // 10 primeros numeros
-        int num_hilos = 4; // 4 hilos
+        // numero de hilos por Scanner
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el numero de hilos: ");
+        int num_hilos = sc.nextInt();
+        // Excepcion si el numero es menor igual que 0 y menor que el numero de hilos
+        while (num_hilos <= 0 || num_hilos > n) {
+            System.out.println("Introduce un numero de hilos valido > 0 y < tu numero de hilos : ");
+            num_hilos = sc.nextInt();
+        }
+        sc.close();
+        long inicio_tiempo = System.nanoTime();
         int suma_total = 0;
         int inicio = 0;
         int fin = 0;
@@ -55,6 +76,20 @@ public class SumaConcurrente implements Runnable {
         for (int i = 0; i < num_hilos; i++) {
             suma_total += sumas[i];
         }
+
+        // Numero de hilos
+        System.out.println("Numero de hilos: " + num_hilos);
+
+        // Impreme suma de cada hilo
+        for (int i = 0; i < num_hilos; i++) {
+            System.out.println("Suma hilo " + i + ": " + sumas[i]);
+        }
+        // Imprime suma total
         System.out.println("Suma total: " + suma_total);
+
+        long fin_tiempo = System.nanoTime();
+        double tiempo = (double) ((fin_tiempo - inicio_tiempo) / 1e6);
+        System.out.println(tiempo + " Milisegundos");
+
     }
 }
