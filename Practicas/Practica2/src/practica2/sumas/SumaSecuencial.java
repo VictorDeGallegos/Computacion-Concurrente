@@ -5,7 +5,7 @@ public class SumaSecuencial {
     // Suma secuencial de los primeros n numeros usando hilos
     public static void main(String[] args) {
         long inicio_tiempo = System.nanoTime();
-        int n = 10; // 10 primeros numeros
+        int n = 11; // 10 primeros numeros
         int hilos = 1; // 1 hilos
         // suma secuencial
         int suma_total = 0;
@@ -29,7 +29,7 @@ public class SumaSecuencial {
         }
         // Numero de hilos
         System.out.println("Numero de hilos: " + hilos);
-
+        System.out.println("La suma de los numeros del uno al diez");
         // Imprime suma total
         System.out.println("Suma total: " + suma_total);
 
