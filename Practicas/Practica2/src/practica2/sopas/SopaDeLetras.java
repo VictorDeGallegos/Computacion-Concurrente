@@ -8,7 +8,7 @@ package practica2.sopas;
 public class SopaDeLetras {
     public static void main(String[] args) {
         long inicio = System.nanoTime();
-        SopaDeLetrasSecuencial sopaDeLetras = new SopaDeLetrasSecuencial("Practicas/Practica2/src/practica2/sopas/sopa1","Practicas/Practica2/src/practica2/sopas//palabras1");
+        SopaDeLetrasSecuencial sopaDeLetras = new SopaDeLetrasSecuencial("turuta/sopa3","turuta/palabra3");
         sopaDeLetras.muestraSopa();
         sopaDeLetras.encuentraPalabras();
         sopaDeLetras.muestraLetras();
