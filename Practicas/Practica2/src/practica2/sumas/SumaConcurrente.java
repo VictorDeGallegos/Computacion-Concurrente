@@ -25,6 +25,15 @@ public class SumaConcurrente implements Runnable {
         sumas[id] = suma;
     }
 
+    public static boolean isNumber(String n) {
+        try {
+            Integer.parseInt(n);
+            return true;
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+    }
+
     // Suma de los primeros n numeros de manera concurrente
     public static void main(String[] args) {
         int n = 10; // 10 primeros numeros
@@ -32,6 +41,12 @@ public class SumaConcurrente implements Runnable {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el numero de hilos: ");
         int num_hilos = sc.nextInt();
+        // Excepcion si el numero es menor igual que 0 y menor que el numero de hilos
+        while (num_hilos <= 0 || num_hilos > n) {
+            System.out.println("Introduce un numero de hilos valido > 0 y < tu numero de hilos : ");
+            num_hilos = sc.nextInt();
+        }
+        sc.close();
         long inicio_tiempo = System.nanoTime();
         int suma_total = 0;
         int inicio = 0;
