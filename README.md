@@ -15,7 +15,7 @@ Repositorio para la materia de Computación Concurrente de la carrera de Ciencia
 > * **Victor Hugo Gallegos Mota** - *316160456* - [VictorDeGallegos](https://github.com/VictorDeGallegos)
 > * **José Demian Jiménez** - *314291707* - [demian35](https://github.com/demian35)
 > * **Carlos Cruz Rangel** - *314208682* - [CarlosCruzRangel](https://github.com/CarlosCruzRangel)
-> * **Ernesto Muñoz Nieves** - ** - [ernt](https://github.com/ernt)
+> * **Ernesto Muñoz Nieves** - *314133586* - [ernt](https://github.com/ernt)
 > * **Juan Carlos Bautista Sandoval** - ** - [JuanBautistta](https://github.com/JuanBautistta)
 >
 >
@@ -27,6 +27,8 @@ Repositorio para la materia de Computación Concurrente de la carrera de Ciencia
   * [Tarea 2](https://github.com/VictorDeGallegos/Computacion-Concurrente/blob/Victor/Tareas/Tarea%202/Tarea2-Javatar.pdf)
 * [Practicas]()
   * [Practica 2](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/Victor/Practicas/Practica2)
+  * [Practica 3](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/developer/Practicas/Practica3)
+  
 
 ## Expresiones de Gratitud 🎁
 
