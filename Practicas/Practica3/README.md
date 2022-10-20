@@ -36,5 +36,35 @@ Desarrollamos la practica en el IDE Visual Studio Code, por lo que se recomienda
 
 Utilizamos el plugin [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) para ejecutar los scripts. Basta con abrir el archivo FiltroLockTest.java ó PetersonLockTest.java y presionar `Ctrl+Alt+N` para ejecutarlos.
 
+O bien, se puede ejecutar desde la terminal con el siguiente comando:
+
+### Para FiltroLockTest.java
+
+
+```bash
+javac FiltroLockTest.java 
+```
+
+```bash
+java FiltroLockTest
+```
+
+| ![FiltroLockTest](https://user-images.githubusercontent.com/41756950/197074103-3575d9c5-400b-4899-b773-1c42de4e256a.png) |
+|:--------------------------:|
+|**Resultado en consola de FiltroLockTest**|
+
+### Para PetersonLockTest.java
+
+```bash
+javac PetersonLockTest.java 
+```
+
+```bash
+java PetersonLockTest
+```
+
+| ![PetersonLockTest](https://user-images.githubusercontent.com/41756950/197074770-ac5703db-e686-4179-96ce-db0287844630.png) |
+|:--------------------------:|
+|**Resultado en consola de PetersonLockTest**|
 ---
 ⌨️ con ❤️ por  [VictorDeGallegos](https://github.com/VictorDeGallegos), [demian35](https://github.com/demian35), [ernt](https://github.com/ernt), [CarlosCruzRangel](https://github.com/CarlosCruzRangel) y [JuanBautistta](https://github.com/JuanBautistta)
