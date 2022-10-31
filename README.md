@@ -25,6 +25,7 @@ Repositorio para la materia de Computación Concurrente de la carrera de Ciencia
 ## Entregables 📦
 * [Tareas]()
   * [Tarea 2](https://github.com/VictorDeGallegos/Computacion-Concurrente/blob/Victor/Tareas/Tarea%202/Tarea2-Javatar.pdf)
+  * [Tarea 5](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/main/Tareas/Tarea%205)
 * [Practicas]()
   * [Practica 2](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/Victor/Practicas/Practica2)
   * [Practica 3](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/developer/Practicas/Practica3)
