@@ -62,7 +62,7 @@ java Main
 
 ### HP EliteBook 8460p 💻
 
-![Windows 10](https://cdn.discordapp.com/attachments/1007174346265067553/1037156110324486194/especsPcDemian.png)
+![System info](https://cdn.discordapp.com/attachments/1007174346265067553/1038187242532909106/neofetch.png)
 
 **Tabla de tiempos de ejecución de los algoritmos:**
 
