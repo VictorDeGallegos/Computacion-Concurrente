@@ -20,6 +20,15 @@
 
 *Para poder ejecutar las aplicaciones es necesario tener instalado alguna version de java como java 8  ,java 11 o posterior.*
 
+Probado en macOS
+
+```bash
+java -version
+openjdk version "11.0.14" 2022-01-18 LTS
+OpenJDK Runtime Environment Zulu11.54+23-CA (build 11.0.14+9-LTS)
+OpenJDK 64-Bit Server VM Zulu11.54+23-CA (build 11.0.14+9-LTS, mixed mode)
+```
+
 Probado en windows 10
 
 ```cmd powershell
