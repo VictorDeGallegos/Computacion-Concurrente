@@ -80,14 +80,17 @@ java Main
 
 ![System info](https://user-images.githubusercontent.com/79823316/199967044-9014d00a-d458-40c3-8ba7-89e7b03a607b.png)
 
-| Hilos |  TAS   | TTAS   | BackOff | CLH     | MCS     |
-| :---: | :---:  | :---:  |  :---:  | :---:   | :---:   |
-| 2     | 0.0014 | 0.0013 | 0.0023  | 0.0039  | 0.0038  |
-| 3     | 0.0030 | 0.0019 | 0.0033  | 0.0120  | 0.0102  |
-| 7     | 0.0065 | 0.0070 | 0.0051  | 0.0559  | 0.0540  |
-| 15    | 0.0120 | 0.0658 | 0.0172  | 0.3553  | 0.2998  |
-| 21    | 0.0826 | 0.1146 | 1.0111  | 0.3553  | 0.9655  |
-| 30    | 0.0251 | 0.0172 | 0.0112  | 1.4604  | 1.3807  |
-| 50    | 0.0443 | 0.0201 | 0.0592  | 3.5877  | 3.6035  |
+**Tabla de tiempos de ejecución de los algoritmos:**
+
+
+| Hilos |  TAS   | TTAS   | BackOff | CLH    | MCS    |
+| :---: | :---:  | :---:  |  :---:  | :---:  | :---:  |
+| 2     | 0.0028 | 0.0017 | 0.0067  | 0.0049 | 0.0068 |
+| 3     | 0.0033 | 0.0022 | 0.0069  | 0.0088 | 0.0052 |
+| 7     | 0.0056 | 0.0047 | 0.0136  | 0.0298 | 0.0282 |
+| 15    | 0.0101 | 0.0103 | 0.0218  | 0.0943 | 0.0927 |
+| 21    | 0.0186 | 0.0755 | 0.0249  | 0.1659 | 0.1518 |
+| 30    | 0.0200 | 0.0199 | 0.0220  | 0.3459 | 0.2983 |
+| 50    | 0.0573 | 0.2103 | 0.1330  | 0.9320 | 0.9437 |
 ---
 ⌨️ con ❤️ por  [VictorDeGallegos](https://github.com/VictorDeGallegos), [demian35](https://github.com/demian35), [ernt](https://github.com/ernt), [CarlosCruzRangel](https://github.com/CarlosCruzRangel) y [JuanBautistta](https://github.com/JuanBautistta)
