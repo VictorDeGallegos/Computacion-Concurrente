@@ -16,7 +16,7 @@ Repositorio para la materia de Computación Concurrente de la carrera de Ciencia
 > * **José Demian Jiménez** - *314291707* - [demian35](https://github.com/demian35)
 > * **Carlos Cruz Rangel** - *314208682* - [CarlosCruzRangel](https://github.com/CarlosCruzRangel)
 > * **Ernesto Muñoz Nieves** - *314133586* - [ernt](https://github.com/ernt)
-> * **Juan Carlos Bautista Sandoval** - ** - [JuanBautistta](https://github.com/JuanBautistta)
+> * **Juan Carlos Bautista Sandoval** - *314275541* - [JuanBautistta](https://github.com/JuanBautistta)
 >
 >
 >

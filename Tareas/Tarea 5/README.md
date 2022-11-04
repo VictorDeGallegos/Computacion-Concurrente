@@ -63,7 +63,7 @@ javac Main.java
 java Main
 ```
 
-| ![Algoritmos en ejecucion](https://cdn.discordapp.com/attachments/1007174346265067553/1038007497245589554/terminal.png)|
+| ![Algoritmos en ejecucion](https://user-images.githubusercontent.com/41756950/199122946-491d966f-f1cf-4096-8892-d85b9b080b8e.png)|
 |:--------------------------:|
 |**Tiempo de ejecucion de los Algoritmos con 3 hilos**|
 
@@ -84,7 +84,7 @@ java Main
 | 21     | 0.0331402    | 0.0608656       |0.045167       | 0.2100421      | 0.1342033      |
 | 30     | 0.0135727      | 0.0798678      |0.024749       | 0.2737452       | 0.2574049     |
 | 50     | 0.0577881       | 0.0477697     | 0.096521      | 0.7463273      | 0.6289357      |
-
+---
 ### Dell Latitude E7240 💻
 
 ![System info](https://user-images.githubusercontent.com/79823316/199967044-9014d00a-d458-40c3-8ba7-89e7b03a607b.png)
@@ -119,13 +119,6 @@ java Main
 | 30    | 0.0094 | 0.0085 | 0.0339  | 0.1284 | 0.1242 |
 | 50    | 0.0123 | 0.0132 | 0.0862  | 0.3761 | 0.3339 |
 ---
-
-| ![Algoritmos en ejecucion](https://user-images.githubusercontent.com/41756950/199122946-491d966f-f1cf-4096-8892-d85b9b080b8e.png)|
-|:--------------------------:|
-|**Tiempo de ejecucion de los Algoritmos con 3 hilos**|
-
-## Pruebas de rendimiento
-
 ### Macbook Pro 2021 💻
 
 ![Neofetch Macbook](https://user-images.githubusercontent.com/41756950/199126905-2eea306c-b536-4e2a-83c6-8efe29432d3e.png)
@@ -141,6 +134,23 @@ java Main
 | 21     | 0.0826      | 0.1146       | 1.0111       | 0.3553       | 0.9655      |
 | 30     | 0.0251      | 0.0172       | 0.0112       | 1.4604       | 1.3807      |
 | 50     | 0.0443      | 0.0201       | 0.0592       | 3.5877       | 3.6035      |
+---
+### HP Pavillion
+
+![neofetch](https://user-images.githubusercontent.com/54485680/200089992-b93fb45c-d746-4c5b-a4c0-71321720faf2.jpg)
+
+**Tabla de tiempos de ejecución de los algoritmos:**
+
+
+| Hilos |  TAS     | TTAS     | BackOff   | CLH      | MCS      |
+| :---: | :---:    | :---:    |  :---:    | :---:    | :---:    |
+| 2     | 0.011585 | 0.014299 | 0.090106  | 0.043530 | 0.042380 |
+| 3     | 0.018093 | 0.014983 | 0.023385  | 0.039925 | 0.036925 |
+| 7     | 0.024174 | 0.041715 | 0.068431  | 0.077351 | 0.180510 |
+| 15    | 0.035839 | 0.040580 | 0.168873  | 0.280053 | 0.227641 |
+| 21    | 0.033771 | 0.063532 | 0.117762  | 0.453071 | 0.319551 |
+| 30    | 0.283089 | 0.112735 | 0.143348  | 0.839320 | 0.596904 |
+| 50    | 0.059741 | 0.079312 | 0.186124  | 0.435544 | 0.917716 |
 
 ---
 ⌨️ con ❤️ por  [VictorDeGallegos](https://github.com/VictorDeGallegos), [demian35](https://github.com/demian35), [ernt](https://github.com/ernt), [CarlosCruzRangel](https://github.com/CarlosCruzRangel) y [JuanBautistta](https://github.com/JuanBautistta)
