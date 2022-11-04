@@ -47,7 +47,7 @@ javac Main.java
 java Main
 ```
 
-| ![Algoritmos en ejecucion](https://user-images.githubusercontent.com/41756950/199122946-491d966f-f1cf-4096-8892-d85b9b080b8e.png)|
+| ![Algoritmos en ejecucion](https://cdn.discordapp.com/attachments/1007174346265067553/1038007497245589554/terminal.png)|
 |:--------------------------:|
 |**Tiempo de ejecucion de los Algoritmos con 3 hilos**|
 
