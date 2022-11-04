@@ -53,9 +53,9 @@ java Main
 
 ## Pruebas de rendimiento
 
-### Macbook Pro 2021 💻
+### HP EliteBook 8460p 💻
 
-![Neofetch Macbook](https://user-images.githubusercontent.com/41756950/199126905-2eea306c-b536-4e2a-83c6-8efe29432d3e.png)
+![Windows 10](https://cdn.discordapp.com/attachments/1007174346265067553/1037156110324486194/especsPcDemian.png)
 
 **Tabla de tiempos de ejecución de los algoritmos:**
 
