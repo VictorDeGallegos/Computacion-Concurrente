@@ -93,4 +93,21 @@ java Main
 | 30    | 0.0200 | 0.0199 | 0.0220  | 0.3459 | 0.2983 |
 | 50    | 0.0573 | 0.2103 | 0.1330  | 0.9320 | 0.9437 |
 ---
+### LENOVO Legion 5 💻
+
+![info](https://cdn.discordapp.com/attachments/1007174346265067553/1038152509488893952/neofecht.png)
+
+**Tabla de tiempos de ejecución de los algoritmos:**
+
+
+| Hilos |  TAS   | TTAS   | BackOff | CLH    | MCS    |
+| :---: | :---:  | :---:  |  :---:  | :---:  | :---:  |
+| 2     | 0.0020 | 0.0010 | 0.0038  | 0.0040 | 0.0035 |
+| 3     | 0.0028 | 0.0015 | 0.0054  | 0.0041 | 0.0038 |
+| 7     | 0.0042 | 0.0037 | 0.0102  | 0.0154 | 0.0131 |
+| 15    | 0.0086 | 0.0057 | 0.0147  | 0.0413 | 0.0403 |
+| 21    | 0.0079 | 0.0061 | 0.0230  | 0.0698 | 0.0717 |
+| 30    | 0.0094 | 0.0085 | 0.0339  | 0.1284 | 0.1242 |
+| 50    | 0.0123 | 0.0132 | 0.0862  | 0.3761 | 0.3339 |
+---
 ⌨️ con ❤️ por  [VictorDeGallegos](https://github.com/VictorDeGallegos), [demian35](https://github.com/demian35), [ernt](https://github.com/ernt), [CarlosCruzRangel](https://github.com/CarlosCruzRangel) y [JuanBautistta](https://github.com/JuanBautistta)
