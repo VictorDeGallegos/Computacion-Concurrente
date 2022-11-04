@@ -18,15 +18,15 @@
 
 ## Pre-requisitos 📋
 
-*Para poder ejecutar las aplicaciones es necesario tener instalado alguna version de java como java 8 o java 11.*
+*Para poder ejecutar las aplicaciones es necesario tener instalado alguna version de java como java 8  ,java 11 o posterior.*
 
-Probado en macOS
+Probado en windows 10
 
-```bash
+```cmd powershell
 java -version
-openjdk version "11.0.14" 2022-01-18 LTS
-OpenJDK Runtime Environment Zulu11.54+23-CA (build 11.0.14+9-LTS)
-OpenJDK 64-Bit Server VM Zulu11.54+23-CA (build 11.0.14+9-LTS, mixed mode)
+java version "17.0.4.1" 2022-08-18 LTS
+Java(TM) SE Runtime Environment (build 17.0.4.1+1-LTS-2)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.4.1+1-LTS-2, mixed mode, sharing)
 ```
 
 Probado en Windows 10 Pro
@@ -54,27 +54,27 @@ javac Main.java
 java Main
 ```
 
-| ![Algoritmos en ejecucion](https://user-images.githubusercontent.com/41756950/199122946-491d966f-f1cf-4096-8892-d85b9b080b8e.png)|
+| ![Algoritmos en ejecucion](https://cdn.discordapp.com/attachments/1007174346265067553/1038007497245589554/terminal.png)|
 |:--------------------------:|
 |**Tiempo de ejecucion de los Algoritmos con 3 hilos**|
 
 ## Pruebas de rendimiento
 
-### Macbook Pro 2021 💻
+### HP EliteBook 8460p 💻
 
-![Neofetch Macbook](https://user-images.githubusercontent.com/41756950/199126905-2eea306c-b536-4e2a-83c6-8efe29432d3e.png)
+![System info](https://cdn.discordapp.com/attachments/1007174346265067553/1038187242532909106/neofetch.png)
 
 **Tabla de tiempos de ejecución de los algoritmos:**
 
 | Hilos | TAS | TTAS | BackOff | CLH | MCS |
 | :---         |     :---:      |     :---:      |     :---:      |     :---:     |          ---: |
-| 2   | 0.0014     | 0.0013     |  0.0023     |  0.0039    |  0.0038 |
-| 3   | 0.0030     | 0.0019     | 0.0033     | 0.0120    |  0.0102 |
-| 7     | 0.0065       | 0.0070       | 0.0051       | 0.0559       | 0.0540      |
-| 15     | 0.0120      | 0.0658       | 0.0172       | 0.3553       | 0.2998      |
-| 21     | 0.0826      | 0.1146       | 1.0111       | 0.3553       | 0.9655      |
-| 30     | 0.0251      | 0.0172       | 0.0112       | 1.4604       | 1.3807      |
-| 50     | 0.0443      | 0.0201       | 0.0592       | 3.5877       | 3.6035      |
+| 2   | 0.0034447     | 0.0041384     |  0.1028013    |  0.0098006   |  0.0078988 |
+| 3   | 0.0117994     | 0.0081241    | 0.058873     | 0.3975983    |  0.0097082 |
+| 7     | 0.0081909        | 0.0058605      | 0.0434048       | 0.1111039     | 0.3149743       |
+| 15     | 0.0118583      | 0.0109158       | 0.0242223      | 0.0951732      | 0.0796919      |
+| 21     | 0.0331402    | 0.0608656       |0.045167       | 0.2100421      | 0.1342033      |
+| 30     | 0.0135727      | 0.0798678      |0.024749       | 0.2737452       | 0.2574049     |
+| 50     | 0.0577881       | 0.0477697     | 0.096521      | 0.7463273      | 0.6289357      |
 
 ### Dell Latitude E7240 💻
 
