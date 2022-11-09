@@ -83,6 +83,8 @@ java Main
 | 30    | 0.0135727 | 0.0798678 | 0.024749  | 0.2737452 | 0.2574049 |
 | 50    | 0.0577881 | 0.0477697 | 0.096521  | 0.7463273 | 0.6289357 |
 
+![TAS, TTAS, BACKOFF, CLH y MCS (HP EliteBook 8460p)](https://user-images.githubusercontent.com/41756950/200735175-28a063d6-98b5-4ef4-992e-049d06fe9904.png)
+
 ### Dell Latitude E7240 💻
 
 ![System info](https://user-images.githubusercontent.com/79823316/199967044-9014d00a-d458-40c3-8ba7-89e7b03a607b.png)
@@ -99,6 +101,8 @@ java Main
 | 21    | 0.0186 | 0.0755 | 0.0249  | 0.1659 | 0.1518 |
 | 30    | 0.0200 | 0.0199 | 0.0220  | 0.3459 | 0.2983 |
 | 50    | 0.0573 | 0.2103 | 0.1330  | 0.9320 | 0.9437 |
+
+![TAS, TTAS, BACKOFF, CLH y MCS (Dell Latitude E7240)](https://user-images.githubusercontent.com/41756950/200735804-ebd69385-56c0-464c-bd45-0506535484c6.png)
 
 ### LENOVO Legion 5 💻
 
@@ -117,6 +121,8 @@ java Main
 | 30    | 0.0094 | 0.0085 | 0.0339  | 0.1284 | 0.1242 |
 | 50    | 0.0123 | 0.0132 | 0.0862  | 0.3761 | 0.3339 |
 
+![TAS, TTAS, BACKOFF, CLH y MCS (LENOVO Legion 5)](https://user-images.githubusercontent.com/41756950/200736089-61d9466b-4604-48b0-aa9a-328e21984bbd.png)
+
 ### Macbook Pro 2021 💻
 
 ![Neofetch Macbook](https://user-images.githubusercontent.com/41756950/199126905-2eea306c-b536-4e2a-83c6-8efe29432d3e.png)
@@ -132,6 +138,8 @@ java Main
 | 21    | 0.0826 | 0.1146 | 1.0111  | 0.3553 | 0.9655 |
 | 30    | 0.0251 | 0.0172 | 0.0112  | 1.4604 | 1.3807 |
 | 50    | 0.0443 | 0.0201 | 0.0592  | 3.5877 | 3.6035 |
+
+![TAS, TTAS, BACKOFF, CLH y MCS (Macbook Pro 2021)](https://user-images.githubusercontent.com/41756950/200736219-e02d1506-5d2c-465f-8cfc-7a658a371220.png)
 
 ### HP Pavillion
 
@@ -149,6 +157,8 @@ java Main
 | 21    | 0.033771 | 0.063532 | 0.117762  | 0.453071 | 0.319551 |
 | 30    | 0.283089 | 0.112735 | 0.143348  | 0.839320 | 0.596904 |
 | 50    | 0.059741 | 0.079312 | 0.186124  | 0.435544 | 0.917716 |
+
+![TAS, TTAS, BACKOFF, CLH y MCS (HP Pavillion)](https://user-images.githubusercontent.com/41756950/200736290-3252c302-e168-491a-a0be-61c5657661f8.png)
 
 ---
 ⌨️ con ❤️ por  [VictorDeGallegos](https://github.com/VictorDeGallegos), [demian35](https://github.com/demian35), [ernt](https://github.com/ernt), [CarlosCruzRangel](https://github.com/CarlosCruzRangel) y [JuanBautistta](https://github.com/JuanBautistta)
