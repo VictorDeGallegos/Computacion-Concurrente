@@ -37,37 +37,37 @@ Poisterior a esto podra consultar que tanques ha adquirido, mientras que otros u
 
 En esta pagina se muestra el menu principal, el cual contiene las opciones de consultar tanques disponibles, consultar los tanques adquiridos.
 
-<img width="600" alt="inicio" src="https://user-images.githubusercontent.com/41756950/204083599-ed920e2e-534c-4c42-946b-d300d86d9dbb.png">
+<img width="1624" alt="inicio" src="https://user-images.githubusercontent.com/41756950/204083599-ed920e2e-534c-4c42-946b-d300d86d9dbb.png">
 
 #### Consultar tanques disponibles
 
 En esta pagina se muestra la lista de tanques disponibles, el usuario puede seleccionar el tanque que desee y posteriormente comprarlo-reservarlo.
 
-<img width="600" alt="Disponibles" src="https://user-images.githubusercontent.com/41756950/204083669-74c028e8-43ac-4d78-996c-94f6fb51ef69.png">
+<img width="1624" alt="Disponibles" src="https://user-images.githubusercontent.com/41756950/204083669-74c028e8-43ac-4d78-996c-94f6fb51ef69.png">
 
 #### Reservar tanque
 
 En esta pagina se muestra el tanque que el usuario selecciono, el usuario puede reservar por su numero de telefono el tanque o cancelar la operacion volviendo al inicio.
 
-<img width="600" alt="reservar" src="https://user-images.githubusercontent.com/41756950/204083709-0aecfe8e-0ce4-4fd3-a93e-e5b38457165e.png">
+<img width="1624" alt="reservar" src="https://user-images.githubusercontent.com/41756950/204083709-0aecfe8e-0ce4-4fd3-a93e-e5b38457165e.png">
 
 #### Alerta satisfactoria
 
 En esta pagina se muestra la alerta de que el tanque fue reservado con exito, el usuario puede volver al inicio o consultar los tanques reservados.
 
-<img width="600" alt="Alerta satisfactoria" src="https://user-images.githubusercontent.com/41756950/204083756-d4a77c83-3622-4606-aa86-3e6d61eddec2.png">
+<img width="1624" alt="Alerta satisfactoria" src="https://user-images.githubusercontent.com/41756950/204083756-d4a77c83-3622-4606-aa86-3e6d61eddec2.png">
 
 #### Consultar tanques reservados
 
 En esta pagina se muestra la lista de tanques reservados por el usuario
 
-<img width="600" alt="Tanque recibido" src="https://user-images.githubusercontent.com/41756950/204083823-6d1ee6af-b266-4d35-9e91-e6d595a2b5c9.png">
+<img width="1624" alt="Tanque recibido" src="https://user-images.githubusercontent.com/41756950/204083823-6d1ee6af-b266-4d35-9e91-e6d595a2b5c9.png">
 
 #### Alerta de error al intentar reservar el mismo tanque
 
 Despues de realizar el mismo procedimiento pero con un numero de telefono distinto se muestra una alerta indicando que ese tanque ya fue reservado por otro usuario.
 
-<img width="600" alt="Alerta error" src="https://user-images.githubusercontent.com/41756950/204083867-a6fce51a-d60e-46f4-b8ee-e95ab9fa3fb7.png">
+<img width="1624" alt="Alerta error" src="https://user-images.githubusercontent.com/41756950/204083867-a6fce51a-d60e-46f4-b8ee-e95ab9fa3fb7.png">
 
 ## PROBLEMA 2 De Regalo 🎁:
 
@@ -92,6 +92,7 @@ imágenes
 
 20211020123456.shrek.png
 <img width="300" alt="Alerta error" src="https://printmania.online/wp-content/uploads/2018/01/shrek-708x640.jpg">
+
 20211020123457.shrek.png
 <img width="300" alt="Alerta error" src="https://printmania.online/wp-content/uploads/2018/01/shrek-708x640.jpg">
 
