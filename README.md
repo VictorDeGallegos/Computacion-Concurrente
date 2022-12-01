@@ -29,6 +29,8 @@ Repositorio para la materia de Computación Concurrente de la carrera de Ciencia
 * [Practicas]()
   * [Practica 2](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/Victor/Practicas/Practica2)
   * [Practica 3](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/developer/Practicas/Practica3)
+  * [Practica 5](https://github.com/VictorDeGallegos/Computacion-Concurrente/tree/main/Practicas/Practica5)
+  * [Practica Extra](https://github.com/VictorDeGallegos/Practica-Extra-Concurrente)
   
 
 ## Expresiones de Gratitud 🎁
