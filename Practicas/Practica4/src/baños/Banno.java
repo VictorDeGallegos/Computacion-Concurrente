@@ -42,18 +42,53 @@ public class Banno {
     }
 
     public void entraHombre() throws InterruptedException {
-        // Aqui va el codigo
+        lock.lock(); // obtenemos el candado
+        try {
+            while (!used) { // mientras no este ocupado
+                hombres.await();
+            }
+            used = true; // lo ocupamos
+            timesMalesEntered++; // incrementamos el número de hombres que han entrado
+            males++; // incrementamos el número de hombres que están dentro
+        } finally {
+            lock.unlock(); // liberamos el candado
+        }
     }
 
     public void salHombre() {
-        // Aqui va el codigo
+        // Pone candado
+        lock.lock();
+        try {
+            males--; // Decrementa el número de hombres dentro
+            if (males == 0) { // Si no hay más hombres
+                mujeres.signalAll(); // Despierta a todas las mujeres
+                used = false; // Libera el baño
+            } else {
+                mujeres.signal(); // Despierta a una mujer
+            }
+        } catch (Exception e) {
+
+        } finally {
+            // Desbloquea el candado
+            lock.unlock();
+        }
     }
 
     public void entraMujer() throws InterruptedException {
-        // Aqui va el codigo
+        lock.lock();
+        try {
+            while (!used) {
+                mujeres.await();
+            }
+            used = true;
+            timesFemalesEntered++; // incrementamos el número de mujeres que han entrado
+            females++; // incrementamos el número de mujeres que están dentro
+        } finally {
+            lock.unlock();
+        }
     }
 
     public void salMujer() {
-        // Aqui va el codigo
+
     }
 }
