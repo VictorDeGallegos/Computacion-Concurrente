@@ -15,4 +15,20 @@ public class Hombre extends Participante {
     public void salBanno() throws InterruptedException {
         this.banno.salHombre();
     }
+
+    public void start() { // Eliminar si no funciona
+        new Thread(this).start();
+    }
+
+    public void interrupt() {// Eliminar si no funciona
+        new Thread(this).interrupt();
+    }
+
+    public void join() { // Eliminar si no funciona
+        try {
+            new Thread(this).join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

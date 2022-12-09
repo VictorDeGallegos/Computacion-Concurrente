@@ -22,7 +22,7 @@ public class Banno {
         this.timesMalesEntered = 0;
         this.timesFemalesEntered = 0;
         males = females = 0;
-        used = false;
+        used = true;
     }
 
     public long getTimesMalesEntered() {
@@ -77,10 +77,10 @@ public class Banno {
     public void entraMujer() throws InterruptedException {
         lock.lock();
         try {
-            while (!used) {
+            while (used) {
                 mujeres.await();
             }
-            used = true;
+            used = false;
             timesFemalesEntered++; // incrementamos el número de mujeres que han entrado
             females++; // incrementamos el número de mujeres que están dentro
         } finally {
@@ -89,6 +89,22 @@ public class Banno {
     }
 
     public void salMujer() {
+        // Pone candado
+        lock.lock();
+        try {
+            females--; // Decrementa el número de mujeres dentro
+            if (females == 0) { // Si no hay más mujeres
+                hombres.signalAll(); // Despierta a todos los hombres
+                used = true; // Libera el baño
+            } else {
+                // Si no, solo le avisa a algún hombre
+                hombres.signal();
+            }
+        } catch (Exception e) {
 
+        } finally {
+            // Desbloquea el candado
+            lock.unlock();
+        }
     }
 }
